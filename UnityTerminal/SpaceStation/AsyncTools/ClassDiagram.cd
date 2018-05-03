@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AsyncTools">
+    <Position X="11.5" Y="0.75" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="AsyncTools.Awaiter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AsyncTools\AsyncTools.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="AsyncTools.DelayAwaiter">
+        <TypeIdentifier>
+          <NewMemberFileName>AsyncTools\AsyncTools.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AsyncTools.ContextActivationAwaiter">
+        <TypeIdentifier>
+          <NewMemberFileName>AsyncTools\AsyncTools.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AsyncTools.SynchronizationContextAwaiter">
+        <TypeIdentifier>
+          <NewMemberFileName>AsyncTools\AsyncTools.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AsyncTools.ThreadPoolContextAwaiter">
+        <TypeIdentifier>
+          <NewMemberFileName>AsyncTools\AsyncTools.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AsyncTools.AsyncOperationAwaiter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AsyncTools\AsyncTools.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gIAACAAAgBQAAACAAABAAAAQDAAAAAAIAAAEAgAIAAA=</HashCode>
+      <FileName>AsyncTools\AsyncTools.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityScheduler">
+    <Position X="8.75" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAEAkAAAQQAAAAAIAAAEAAAAAAQQAAAAAQACAA=</HashCode>
+      <FileName>AsyncTools\UnityScheduler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EditorUpdateScheduler" />
+      <Property Name="FixedUpdateScheduler" />
+      <Property Name="LateUpdateScheduler" />
+      <Property Name="MainThreadScheduler" />
+      <Property Name="ThreadPoolScheduler" />
+      <Property Name="UpdateScheduler" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UnitySynchronizationContext">
+    <Position X="0.5" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAABAAABAAAQACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AsyncTools\UnitySynchronizationContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityTaskScheduler">
+    <Position X="4.5" Y="5" Width="2" />
+    <AssociationLine Name="queue" Type="System.Threading.Tasks.Task">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.091" Y="0.787" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAkAAAABAAABAAAQAACAACAAAAAAAAAAAgAA=</HashCode>
+      <FileName>AsyncTools\UnityTaskScheduler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Context" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="queue" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="System.Threading.Tasks.Task">
+    <Position X="4" Y="9" Width="2.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Threading.Tasks.TaskScheduler">
+    <Position X="4" Y="0.5" Width="3" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

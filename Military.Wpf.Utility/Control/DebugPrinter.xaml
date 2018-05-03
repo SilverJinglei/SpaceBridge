@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="Military.Wpf.Utility.Control.DebugPrinter"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Military.Wpf.Utility.Control"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:behavior="clr-namespace:Military.Wpf.Utility.Behavior"
+             xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid x:Name="DebugLayer">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Clear">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <ei:ChangePropertyAction TargetName="TraceTextBox" PropertyName="Text" Value=""/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+
+            <Button x:Name="HideDebugButton" Content="Hide Debug" Click="HideDebugButton_OnClick">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <ei:ChangePropertyAction TargetName="DebugLayer" PropertyName="Visibility" Value="Collapsed"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+            <CheckBox Content="Can Scroll" IsChecked="{Binding ElementName=TraceTextBox, Path=IsHitTestVisible}"/>
+        </StackPanel>
+        <TextBox x:Name="TraceTextBox" IsHitTestVisible="False" Grid.Row="1"
+                 Background="Transparent">
+            <i:Interaction.Behaviors>
+                <behavior:TextBoxTraceListenerBehavior/>
+            </i:Interaction.Behaviors>
+        </TextBox>
+    </Grid>
+</UserControl>

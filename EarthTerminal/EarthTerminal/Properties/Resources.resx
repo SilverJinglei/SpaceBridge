@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ResultMetadataSample" xml:space="preserve">
+    <value>{"IsException":false,"Token":"16:24:30256","Type":"Result","Value":["ground","round_btn","rect_btn","level[0]","handle","pointer","level[1]","level[2]","mouse"]}</value>
+  </data>
+  <data name="ResultMetadataSample2" xml:space="preserve">
+    <value>{"IsException":false,"Token":"16:24:30256","Type":"Result","Value":"aa"}</value>
+  </data>
+  <data name="VrpResult1" xml:space="preserve">
+    <value>{
+	"SocketIdx": 1,
+	"IsException": false,
+	"Token": "15:55:43861",
+	"Type": "Result",
+	"Value": {
+		"Value": {
+			"Groups": [{
+				"Guids": ["A5A28C44-AD0E-4E09-BCB6-9B3F5061D03E", "F79C157F-2FE5-4669-8AD9-5196204942F7", "78685D25-B79E-4492-9369-8540CBA078C2", "743FB45B-D189-4BA8-A6C9-A11B2130444C", "84BB5378-8BF8-4D1A-AE89-6C6E75608AF6", "E4985031-C950-4526-821F-AE2921017573", "72E7B672-7715-43C3-A55C-7FAF4CC498B0", "0D440435-97C7-4291-9582-2740286BBDA6", "036CD5D7-D547-47CF-83D7-D8C4D0E06A0F", "17D23C9A-514C-416A-BBB2-9133291779D9", "2578A99B-23AD-441C-874A-0CBB26D96FC1"],
+				"Name": "vrp_rigid_diaoyunche"
+			}],
+			"Models": [{
+				"Guid": "84BB5378-8BF8-4D1A-AE89-6C6E75608AF6",
+				"Name": "xh_sky_吊车01"
+			}, {
+				"Guid": "78685D25-B79E-4492-9369-8540CBA078C2",
+				"Name": "xh_sky_吊车02"
+			}, {
+				"Guid": "743FB45B-D189-4BA8-A6C9-A11B2130444C",
+				"Name": "xh_sky_吊车07"
+			}, {
+				"Guid": "F79C157F-2FE5-4669-8AD9-5196204942F7",
+				"Name": "xh_sky_吊车08"
+			}, {
+				"Guid": "A5A28C44-AD0E-4E09-BCB6-9B3F5061D03E",
+				"Name": "xh_sky_吊车03"
+			}, {
+				"Guid": "E4985031-C950-4526-821F-AE2921017573",
+				"Name": "xh_sky_吊车06"
+			}, {
+				"Guid": "72E7B672-7715-43C3-A55C-7FAF4CC498B0",
+				"Name": "Plane04"
+			}, {
+				"Guid": "0D440435-97C7-4291-9582-2740286BBDA6",
+				"Name": "xh_sky_半挂车86"
+			}, {
+				"Guid": "036CD5D7-D547-47CF-83D7-D8C4D0E06A0F",
+				"Name": "Plane39"
+			}, {
+				"Guid": "17D23C9A-514C-416A-BBB2-9133291779D9",
+				"Name": "xh_sky_半挂车88"
+			}, {
+				"Guid": "2578A99B-23AD-441C-874A-0CBB26D96FC1",
+				"Name": "xh_sky_吊车64"
+			}]
+		}
+	}
+}</value>
+  </data>
+  <data name="VrpResult2" xml:space="preserve">
+    <value>{
+	"IsException": false,
+	"Token": "123",
+	"Type": "Result",
+	"Value": {
+		"Groups": [{
+			"Name": "vrp_rigid_danxiang"
+		}, {
+			"Name": "vrp_rigid_duigaoji"
+		}],
+		"Models": [{
+			"Name": "xh_sky_吊车01",
+			"Guid": "84BB5378-8BF8-4D1A-AE89-6C6E75608AF6"
+		}, {
+			"Name": "xh_sky_吊车02",
+			"Guid": "78685D25-B79E-4492-9369-8540CBA078C2"
+		}]
+	}
+}</value>
+  </data>
+  <data name="Program_Main__" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+</root>

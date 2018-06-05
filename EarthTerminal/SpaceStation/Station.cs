@@ -245,10 +245,6 @@ namespace SpaceStation
             var token = Stopwatch.GetTimestamp().ToString(); // DateTime.Now.ToLongTimeString() + DateTime.Now.Millisecond;
             operation.Token = token;
 
-
-            var resultEvent = new ThreadNotify<ResultMetadata>(null);
-            _results.Add(token, resultEvent);
-
             var jsonString = operation.ToString();
 
 #if NETFX3_5
@@ -259,6 +255,10 @@ namespace SpaceStation
 
             if (operation.IsOneWay)
                 return ResultMetadata.Empty;
+
+
+            var resultEvent = new ThreadNotify<ResultMetadata>(null);
+            _results.Add(token, resultEvent);
 
             resultEvent.WaitNotification();
             _results.Remove(token);

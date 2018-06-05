@@ -107,4 +107,14 @@ namespace SpaceStation.Core
             return _datagrams;
         }
     }
+
+    internal class SimpleHeaderResolver : DatagramResolverBase
+    {
+        public override IEnumerable<string> Resolve(ref string lastPiece)
+        {
+            var bytesCount = lastPiece[0];
+
+            return new string[0];
+        }
+    }
 }

@@ -3,7 +3,7 @@
   <Class Name="SpaceStation.Station">
     <Position X="2.25" Y="1.5" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>AAAIAAAAEAAABAAAEAAADIgAAACAAAQAQiBAAACAAAA=</HashCode>
+      <HashCode>AAAIAAAAEAAABAAAEAAADIgAAACAAAQAQCBAAACAAAA=</HashCode>
       <FileName>Station.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -37,7 +37,7 @@
   <Class Name="SpaceStation.PeerToPeer.P2PServerTerminal">
     <Position X="9.25" Y="15.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAACIAAQAAAAAAAAAAAAAAAAIAAQAACAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAACIAAQAAAAAAAAAAAAAAAAIAAQAAAAAAA=</HashCode>
       <FileName>PeerToPeer\P2PServerTerminal.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -69,7 +69,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="SpaceStation.Core.JsonResolver">
-    <Position X="9.5" Y="8.25" Width="3.5" />
+    <Position X="9.25" Y="8.25" Width="3.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAACAABAAAAAAACAIAAAAEBAAAAAABAAAAIg=</HashCode>
       <FileName>Core\DatagramResolver.cs</FileName>
@@ -78,7 +78,7 @@
   <Class Name="SpaceStation.PeerToPeer.P2PTerminalBase">
     <Position X="7.25" Y="11.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAABAAAUAAAAQgAEAAAACAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>AAAABAAAUAAAAQgAEAAAACAAAAAAAAAAAAAAAACAAAQ=</HashCode>
       <FileName>PeerToPeer\P2PTerminalBase.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -120,7 +120,7 @@
   <Class Name="SpaceStation.PeerToPeer.P2PClientTerminal">
     <Position X="7" Y="15.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAACAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
       <FileName>PeerToPeer\P2PClientTerminal.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -142,11 +142,18 @@
     <Position X="13.25" Y="1.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AEAAAAAAAACIhAAAECghAQAAAACAAAAQAAACAAAAIIA=</HashCode>
-      <FileName>AmbassadorBase.cs</FileName>
+      <FileName>IntelligentCommunication.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Station" />
     </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceStation.Core.SimpleHeaderResolver">
+    <Position X="13.25" Y="8.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\DatagramResolver.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Interface Name="SpaceStation.Core.ITerminal">
     <Position X="6.5" Y="1.5" Width="1.5" />

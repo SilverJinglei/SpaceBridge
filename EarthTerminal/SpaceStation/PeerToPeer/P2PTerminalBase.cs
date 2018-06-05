@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Diagnostics;
 using System.IO;
 using System.Net.Sockets;
@@ -56,6 +57,12 @@ namespace SpaceStation.PeerToPeer
                         OnLosted();
                         return;
                     }
+
+                    ////TODO: get [header]=>package count 
+                    //=> uint32(2^32-1 = 4294967295, refer to UInt32.MaxValue), byte(8bit = 2^8 - 1 = 255) 
+                    //=> uint = 4 * byte
+                    //=> var packageCount = BitConverter.ToInt32(ReceivedBuffer.Take(4).ToArray(), 0);
+                    //=> then use packageCount to calculate remained [body]
 
                     RemainingPiece += Encoding.GetString(ReceivedBuffer, 0, byteCount);
 
